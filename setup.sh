@@ -7,7 +7,7 @@ echo "Setting up environment..."
 pip install --upgrade pip
 
 # Install packages from requirements.txt
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 # Install PyTorch, torchvision, and torchaudio for specific CUDA version
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117 --upgrade
