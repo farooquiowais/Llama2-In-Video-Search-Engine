@@ -1,0 +1,77 @@
+# 🦙 YouTube In-Video Search Engine
+
+This Streamlit-based application is a powerful tool for searching and analyzing transcripts from YouTube videos. By integrating advanced NLP techniques and leveraging the Llama-2 model from Hugging Face, along with Torch, Langchain, and the YouTube Transcript API, it offers a comprehensive approach to processing and querying video transcripts. Additionally, the application utilizes VectorDB for storing and indexing transcripts and implements simple Retrieval Augmented Generation (RAG) pipeline for enhanced query understanding and response generation.
+
+## Features
+
+- **Transcript Extraction**: Extract transcripts from YouTube videos using the YouTube Transcript API.
+- **Transcript Indexing**: Utilize VectorDB to store and index transcripts for efficient querying.
+- **Advanced Query Processing**: Implement the Retrieval Augmented Generation (RAG) pipeline for improved natural language understanding and response generation.
+- **Llama-2 Model Integration**: Leverage the Llama-2 model from Hugging Face for robust NLP capabilities.
+- **Interactive User Interface**: Streamlit-based UI for easy input of YouTube URLs and search queries.
+
+## Installation
+
+To set up this project, clone the repository and install the required dependencies.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-github-username/your-repo-name.git
+cd your-repo-name
+```
+
+### Install Dependencies
+
+Ensure you have Python 3.8+ installed, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+The `requirements.txt` should include:
+```
+torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+langchain einops accelerate transformers bitsandbytes scipy
+xformers sentencepiece
+llama-index==0.7.21 llama_hub==0.0.19
+pydantic==1.10.9
+sentence-transformers
+openai==0.28.0
+youtube_transcript_api
+streamlit
+```
+
+## Usage
+
+To start the application, run:
+
+```bash
+streamlit run app.py
+```
+
+Navigate to the provided localhost URL in your web browser to interact with the application.
+
+## Contributing
+
+Contributions to enhance this application are welcome. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Your Name - [@your_twitter_handle](https://twitter.com/your_twitter_handle) - email@example.com
+
+Project Link: [https://github.com/your-github-username/your-repo-name](https://github.com/your-github-username/your-repo-name)
+
+---
+
+Feel free to modify this template to suit your project's specific needs, such as adding a section on how to contribute, report issues, or use specific features of your application.
