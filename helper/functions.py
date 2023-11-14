@@ -1,5 +1,4 @@
 from transformers import AutoTokenizer
-from secrets import auth_token
 from constants.keys import auth_token
 import streamlit as st
 import torch
