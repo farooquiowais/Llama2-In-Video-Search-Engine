@@ -1,6 +1,8 @@
 from llama_index.llms import HuggingFaceLLM
 from llama_index.embeddings import LangchainEmbedding
-from prompts import system_prompt
+from langchain.embeddings.huggingface import HuggingFaceEmbeddings
+from helper.prompts import system_prompt
+from llama_index.prompts.prompts import SimpleInputPrompt
 
 # Throw together the query wrapper
 query_wrapper_prompt = SimpleInputPrompt("{query_str} [/INST]")

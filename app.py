@@ -23,7 +23,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from helper.functions import get_url_id, get_tokenizer_model
 
 # Create a tokenizer and model
-tokenizer, model = get_tokenizer_model()
+# tokenizer, model = get_tokenizer_model()
 
 # Create a new instance of the Language Model
 from helper.models import embeddings, llm
