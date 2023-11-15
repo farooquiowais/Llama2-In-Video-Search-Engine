@@ -32,15 +32,30 @@ pip install -r requirements.txt
 
 The `requirements.txt` should include:
 ```
-torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
-langchain einops accelerate transformers bitsandbytes scipy
-xformers sentencepiece
-llama-index==0.7.21 llama_hub==0.0.19
+langchain
+einops
+accelerate
+transformers
+bitsandbytes
+scipy
+xformers
+sentencepiece
+llama-index==0.7.21
+llama_hub==0.0.19
 pydantic==1.10.9
 sentence-transformers
 openai==0.28.0
 youtube_transcript_api
 streamlit
+```
+
+## Setup and Run
+
+```bash
+chmod +x setup.sh
+```
+```bash
+./setup.sh
 ```
 
 ## Usage
